@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Code</title>
+    <style>
+        aside {
+            width: 40%;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            margin-left: 5px;
+            margin-right: 60px;
+            float: right;
+            font-style: italic;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body style="background-color: #f2fffd;">
+    
+    <div style="margin-left: 40px;">
+    
+    <div style="text-align: left;">
+       <h1> // C program to convert Binary number to Decimal number. </h1>
+       <div style="margin-left: 60px;">
+       <artical >
+       <code >
+        <p>
+        #include &lt;stdio.h&gt; <br>   
+            #include &lt;conio.h&gt; <br> 
+            void main()<br>
+            {  <br>
+                // declaration of variables<br>  
+                int num, binary_num, decimal_num = 0, base = 1, rem;  <br>
+                printf (" Enter a binary number with the combination of 0s and 1s \n");  <br>
+                scanf (" %d", &num); // accept the binary number (0s and 1s)  <br>
+              <br>
+                binary_num = num; // assign the binary number to the binary_num variable  <br>
+                <br>
+                <br>
+                while ( num > 0)  <br>
+                {  <br>
+                    rem = num % 10; /* divide the binary number by 10 and store the remainder in rem variable. */  <br>
+                    decimal_num = decimal_num + rem * base;  <br>
+                    num = num / 10; // divide the number with quotient  <br>
+                    base = base * 2;  <br>
+                }  <br>
+                <br>
+                printf (" \n The decimal number is %d \t", decimal_num); // print the decimal   <br>
+                getch();  <br>
+            }  <br>
+		</p>
+    </code>
+    </artical>
+    </div>
+</div>
+<br>
+<hr noshade=" solid grey 2px">
+<h3>Time Complexity : O(log(n) base 10)</h3>
+<hr noshade=" solid grey 2px">
+<aside>
+    <samp>
+        <h2>Sample Output</h2>
+    
+        <em>The decimal number is 11</em>      
+    </samp>
+</aside>
+<aside>
+    <samp>
+        <h2>Sample Input </h2>
+		
+        <em>Enter a binary number with the combination of 0s and 1s</em>
+		<kbd>1011</kbd>
+		
+		
+        <br>
+    </samp>
+</aside>
+
+
+
+<br>
+<br>
+<br>
+   
+</div>
+<br>
+<br>
+<br><br>
+</body>
+</html>
