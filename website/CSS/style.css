@@ -43,7 +43,7 @@ h6 {
   font-weight: 70;
   letter-spacing: 0.2em;
   position: relative;
-  top: 100%;
+  top: 90%;
   left: 50%;
   -webkit-transform: translate3d(-50%, -50%, 0);
           transform: translate3d(-50%, -50%, 0);
